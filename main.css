@@ -1,0 +1,164 @@
+@font-face {
+	font-family: Futura;
+	src: url("resources/Futura-Medium.ttf");
+}
+
+@font-face {
+	font-family: Futura;
+	src: url("resources/Futura-MediumItalic.ttf");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Futura;
+	src: url("resources/Futura-CondensedMedium.ttf");
+	font-stretch: condensed;
+}
+
+@font-face {
+	font-family: Futura;
+	src: url("resources/Futura-Bold.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Futura;
+	src: url("resources/Futura-CondensedExtraBold.ttf");
+	font-stretch: condensed;
+	font-weight: bold
+}
+@import "compass/css3"
+
+html, body {
+	height: 100%;
+}
+
+.Parallax {
+	background-image: url("resources/background.jpg");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body {
+	font-family: Futura;
+	text-shadow: 2px 2px 3px mintcream;
+}
+
+
+.ResumeFixedHeader {
+	background-image: url("resources/background.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	overflow: hidden;
+	z-index: 99;
+	left: 0;
+	right: 0;
+	top: 0;
+	border-bottom: 4px groove #7E998E;
+}
+
+
+.ResumeFixedHeader .row {
+	position: relative;
+	z-index: 5;
+}
+
+.ResumeFakeHeader {
+	visibility: hidden;
+}
+
+.Contact1 li {
+	display: inline-block;
+}
+
+.Contact2 li {
+	display: inline-block;
+}
+
+#LinkedInLogo {
+	transform: scale(.7,.7);
+	vertical-align: text-top;
+	margin-top: -1px;
+}
+
+.ResumeBody {
+	position: relative;
+	z-index: 1;
+}
+
+.ResumeBody .row {
+	border-bottom: 1px solid black;
+}
+
+.ResumeBody h2 {
+	font-size: 26px;
+	color: #AA6C63;
+}
+
+.ResumeBody h3 {
+	font-size: 20px;
+}
+
+.ResumeBody h4 {
+	color: #677F78;
+}
+
+ul {
+	list-style-type: disc;
+}	
+
+/* list levels */
+
+.lvl1 {
+	margin-top: 20px;
+	font-size: 20px;
+
+}
+
+.lvl2 {
+	font-size: 18px;
+}
+
+.lvl3 {
+	font-size: 14px;
+}
+
+.lvl4 {
+	
+}
+
+.lvl5 {
+	
+}
+
+/*
+collapsible list functionality
+source: http://bernholdtech.blogspot.de/2013/04/very-simple-pure-css-collapsible-list.html
+*/
+
+.collapsibleList li > input + * {
+display: none;
+}
+
+.collapsibleList li > input:checked + * {
+display: block;
+}
+
+.collapsibleList li > input {
+display: none;
+}
+
+.collapsibleList li > label {
+cursor: pointer;
+display: inherit;
+max-width: inherit;
+margin-bottom: inherit;
+font-weight: inherit;
+}
+
