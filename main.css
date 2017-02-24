@@ -118,7 +118,7 @@ ul {
 .lvl1 {
 	margin-top: 20px;
 	font-size: 20px;
-
+	
 }
 
 .lvl2 {
@@ -138,27 +138,27 @@ ul {
 }
 
 /*
-collapsible list functionality
-source: http://bernholdtech.blogspot.de/2013/04/very-simple-pure-css-collapsible-list.html
+	collapsible list functionality
+	source: http://bernholdtech.blogspot.de/2013/04/very-simple-pure-css-collapsible-list.html
 */
 
 .collapsibleList li > input + * {
-display: none;
-}
+	display: none;
+	}
 
 .collapsibleList li > input:checked + * {
-display: block;
+	display: block;
 }
 
 .collapsibleList li > input {
-display: none;
+	display: none;
 }
 
 .collapsibleList li > label {
-cursor: pointer;
-display: inherit;
-max-width: inherit;
-margin-bottom: inherit;
-font-weight: inherit;
+	cursor: pointer;
+	display: inherit;
+	max-width: inherit;
+	margin-bottom: inherit;
+	font-weight: inherit;
 }
 
